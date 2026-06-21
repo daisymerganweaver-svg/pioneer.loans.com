@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Application System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>Apply for Loan</h2>
+
+  <div class="step active">
+    <input id="fullName" placeholder="Full Name">
+    <button onclick="nextStep()">Next</button>
+  </div>
+
+  <div class="step">
+    <input id="phone" placeholder="Phone Number">
+    <button onclick="prevStep()">Back</button>
+    <button onclick="nextStep()">Next</button>
+  </div>
+
+  <div class="step">
+    <input id="email" placeholder="Email">
+    <button onclick="prevStep()">Back</button>
+    <button onclick="nextStep()">Next</button>
+  </div>
+
+  <div class="step">
+    <input id="amount" placeholder="Amount">
+    <input id="purpose" placeholder="Purpose">
+
+    <button onclick="prevStep()">Back</button>
+    <button onclick="submitForm()">Submit</button>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
